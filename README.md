@@ -5,6 +5,8 @@ This script was designed to configure a newly installed Windows 10 virtual machi
 
 It also has a function to install required software if needed. This means you can host your own powershell script on the Internet (Github repo, gist, etc) and run it along with everything else.
 
+This process will take a while depending on your system and your Internet connection. Please be patient.
+
 ## Legal and Licensing
 This software is free to use and comes as is with no warranty. By downloading and running these scripts, you are accepting the risk of any misconfigurations, removal of software, or damages that may occur.
 
@@ -29,5 +31,3 @@ To run this script with another software installation script, run the following 
 
 ## Output
 This script will create a transcript for troubleshooting purposes. This should be located in the users Documents directory. 
-
-. { Invoke-WebRequest -useb https://raw.githubusercontent.com/UTSA-cyber/DeployWin10VM/master/DeployCleanWin10.ps1 } | Invoke-Expression; Deploy-NewWindows10 -installPkg "https://gist.githubusercontent.com/jknyght9/d00a10f39f91bd6901d7ceaedbe21176/raw/b02b64a9c7d8065e54ebcc1e0e595afe8b751058/is4523-deployment.ps1"
